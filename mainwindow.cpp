@@ -103,4 +103,5 @@ void MainWindow::on_pushButton_clicked()
 
     delete ui->calendarWidget;
     camera->start();
+    ui->pushButton->disconnect(ui->pushButton,SIGNAL(clicked()),this,SLOT(on_pushButton_clicked()));
 }
